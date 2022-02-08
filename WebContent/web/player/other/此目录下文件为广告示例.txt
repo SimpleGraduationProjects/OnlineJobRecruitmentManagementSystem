@@ -1,0 +1,5 @@
+
+
+此目录下文件为广告示例
+
+如何在播放器中调用这样的广告？可参见官方教程 http://www.cuplayer.com/cuplayer/help/Help462.html
