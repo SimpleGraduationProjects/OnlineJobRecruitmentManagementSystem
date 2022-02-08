@@ -1,0 +1,238 @@
+body, button, input, select, textarea {
+    font: 14px/1.5 "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "Î¢ÈíÑÅºÚ", "arial", "STHeiti", "sans-serif";
+    color: #333;
+}
+
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, button, input, textarea, form, th, td, img {
+    margin: 0;
+    padding: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+.header {
+    height: 80px;
+    background-color: #fff;
+}
+.header-w .out {
+    position: relative;
+}
+.out {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    padding: 2px 10px 0 38px;
+    margin-right: 10px;
+}
+
+.banner {
+    background: url(../images/login_bg2.jpg) center top no-repeat;
+    height: 600px;
+    width: 100%;
+}
+
+.banner-ct {
+    position: relative;
+}
+.out {
+    width: 1190px;
+    margin: 0 auto;
+}
+.login {
+    padding: 70px 80px;
+    background-color: #fff;
+    width: 540px;
+    position: absolute;
+    right: 50%;
+    top: 96px;
+    border-radius: 2px;
+    margin-right: -350px;
+}
+.login-new {
+    padding: 40px 80px !important;
+}
+
+.login-left {
+    float: left;
+    padding-right: 80px;
+    border-right: 1px dashed #ededed;
+}
+.login-inp {
+    margin-bottom: 0px;
+    overflow: hidden;
+}
+
+
+
+.center-box {
+    text-align: center;
+    margin: 10px 0;
+}
+.center-box-new {
+    margin-top: 30px !important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+.unit-inp {
+    margin-top: 0px;
+}
+.unit-inp1 input {
+    margin-top: 10px;
+}
+
+.unit-inp input {
+    width: 100%;
+    border: #d0d0d0 solid 1px;
+    background-color: #fff;
+    text-indent: 10px;
+    
+}
+.unit-inp input {
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 2px;
+    width: 288px;
+    height: 70px;
+    border-color: #ededed;
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    margin-top: 10px;
+}
+
+input {
+    border: none 0;
+    outline: none;
+}
+.prompt-text {
+    color: #ee3843;
+    padding-left: 4px;
+    line-height: 24px;
+    margin-bottom: -10px;
+    clear: both;
+}
+body .unit-relative {
+    position: relative;
+    margin-top: 10px;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+.unit-inp .inp-code {
+    width: 60%;
+    float: left;
+}
+.unit-inp .inp-code {
+    width: 288px;
+    height: 60px;
+}
+
+
+.unit-inp .getCodee {
+    cursor: pointer;
+    width: 36%;
+    float: right;
+    color: #ee3843;
+    border: #ee3843 solid 1px;
+    height: 44px;
+    line-height: 44px;
+    border-radius: 5px;
+    text-align: center;
+}
+.unit-inp .getCodee {
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    line-height: 30px;
+    position: absolute;
+    top: 24%;
+    right: 0px;
+}
+.inp-code {
+    margin-bottom: 8px;
+}
+
+.center-box .btn-red {
+    width: 288px;
+    height: 45px;
+}
+.btn-red {
+    display: inline-block;
+    background-color: #ee3843;
+    color: #fff;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+a {
+    text-decoration: none;
+}
+.center-box .regg {
+    padding: 5px 0 8px 0;
+}
+.regg-new1 {
+    margin-top: 130px !important;
+}
+#login_index_zhuce {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+}
+.link-red {
+    color: #ee3843;
+    text-decoration: underline;
+}
+img {
+    border: none 0;
+    vertical-align: middle;
+}
+
+
+
+.login-right {
+    float: left;
+    padding-left: 80px;
+}
+
+
+.login-tab {
+    width: 288px;
+    height: 37px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ededed;
+}
+.login-tab {
+    text-align: center;
+    color: #484848;
+}
+
+.login-tab .active {
+    color: #ee3843;
+}
+
+.login-tab a {
+    font-size: 14px;
+    display: inline-block;
+    padding: 8px 0;
+    width: 49%;
+}
+
+body .active {
+    background: url(../images/login_bottom.png) center bottom no-repeat;
+    border-bottom: none !important;
+}
+
+
+
+
+
+
+

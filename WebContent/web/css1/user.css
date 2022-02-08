@@ -1,0 +1,1946 @@
+@charset "UTF-8";
+
+
+.user-main {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 30px 0
+}
+
+.user-main .main-left {
+	min-height: 417px;
+	width: 150px;
+	border: 1px solid #e6e5e5;
+	padding: 35px 0 9px;
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15)
+}
+
+.user-main .main-left .name {
+	width: 80px;
+	height: 80px;
+	background: url(../images/sprite_user.png) no-repeat -161px 0;
+	margin: 0 auto
+}
+
+.user-main .main-left .name img {
+	width: 80px;
+	height: 80px
+}
+
+.user-main .main-left .user-name {
+	text-align: center;
+	padding: 15px 0
+}
+
+.user-main .main-left ul li {
+	width: 152px;
+	height: 40px;
+	position: relative;
+	text-align: center
+}
+
+.user-main .main-left ul li.hover {
+	background-color: #4fac6a
+}
+
+.user-main .main-left ul li.hover a {
+	color: #fff
+}
+
+.user-main .main-left ul li a {
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	display: inline-block;
+	text-align: left;
+	color: #555;
+	font-size: 14px
+}
+
+.user-main .record_num {
+	background-color: #fffcf6;
+	border: 1px solid #e6d5b2;
+	width: 825px;
+	margin-bottom: 22px;
+	height: 38px
+}
+
+.user-main .record_num p {
+	padding-top: 9px;
+	padding-left: 15px
+}
+
+.user-main .record_num p span {
+	color: red;
+	padding: 0 3px
+}
+
+.user-main .main-rights {
+	margin-bottom: 24px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	padding: 35px;
+	background-color: #fff;
+	border: 1px solid #e6e5e5;
+	width: 755px
+}
+
+.user-main .main-rights .unreal {
+	font-size: 20px;
+	padding-top: 31px
+}
+
+.user-main .main-rights .agent {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e4e4e4;
+	overflow: hidden;
+	margin-top: -16px;
+	position: relative
+}
+
+.user-main .main-rights .agent .agent_pic {
+	width: 70px;
+	float: left
+}
+
+.user-main .main-rights .agent .agent_pic img {
+	border-radius: 50%;
+	width: 55px
+}
+
+.user-main .main-rights .agent .agent_info {
+	padding-top: 7px;
+	float: left
+}
+
+.user-main .main-rights .agent .agent_info .num {
+	color: #999
+}
+
+.user-main .main-rights .agent .evaluate-btn {
+	width: 66px;
+	height: 26px;
+	line-height: 26px;
+	background-color: #00ae66;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 20px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 2px
+}
+
+.user-main .main-rights .agent .see-evaluate-btn {
+	background-color: #fff;
+	border: 1px solid #00ae66;
+	color: #00ae66
+}
+
+.user-main .main-rights .agent .estimate {
+	float: right;
+	padding-top: 12px
+}
+
+.user-main .main-rights .comment_content {
+	display: none;
+	width: 200px;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	width: 756px;
+	border-bottom: 1px solid #e4e4e4
+}
+
+.user-main .main-rights .comment_content .my_comment {
+	overflow: hidden;
+	clear: both
+}
+
+.user-main .main-rights .comment_content .my_comment h1 {
+	float: left
+}
+
+.user-main .main-rights .comment_content .my_comment .p_comment {
+	float: left;
+	width: 459px;
+	padding: 0 10px 20px 10px
+}
+
+.user-main .main-rights .comment_content .my_comment .p_comment p {
+	color: #999
+}
+
+.user-main .main-rights .comment_content .my_comment .source p {
+	font-size: 12px;
+	color: #aaaaaa;
+	float: right
+}
+
+.user-main .main-rights .lst-wrap ul li {
+	padding: 26px 0 26px 0;
+	border-bottom: 1px dotted #e1e1e1
+}
+
+.user-main .main-rights .lst-wrap ul li .report {
+	padding-left: 722px;
+	position: absolute;
+	margin-top: -11px;
+	display: none;
+	z-index: 99
+}
+
+.user-main .main-rights .lst-wrap ul li .report .reportBtn {
+	line-height: 23px;
+	padding: 0 4px;
+	height: 22px;
+	background-color: #fbfbfb
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	font-size: 0;
+	position: relative;
+	width: 173px;
+	height: 130px
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .triangle-topright {
+	display: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0;
+	border-top: 59px solid #de6843;
+	border-left: 59px solid transparent
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .triangle-topright .text
+	{
+	width: 36px;
+	position: relative;
+	top: -49px;
+	left: -36px;
+	font-size: 16px;
+	color: white;
+	transform: rotate(43deg);
+	-ms-transform: rotate(43deg);
+	-moz-transform: rotate(43deg);
+	-webkit-transform: rotate(43deg);
+	-o-transform: rotate(43deg)
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .triangle-topright1 {
+	display: none;
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 0;
+	border-top: 59px solid #de6843;
+	border-left: 59px solid transparent
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .triangle-topright1 .text
+	{
+	width: 36px;
+	position: relative;
+	top: -49px;
+	left: -36px;
+	font-size: 16px;
+	color: white;
+	transform: rotate(43deg);
+	-ms-transform: rotate(43deg);
+	-moz-transform: rotate(43deg);
+	-webkit-transform: rotate(43deg);
+	-o-transform: rotate(43deg)
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel img {
+	width: 173px;
+	height: 130px;
+	transition-property: opacity;
+	transition-duration: .15s;
+	transition-timing-function: linear
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .pic_num {
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+	padding: 0 5px;
+	line-height: 23px;
+	height: 23px
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .pic_num span {
+	position: relative;
+	z-index: 10
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .pic_num span i {
+	margin-right: 3px
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .pic_num span em {
+	font-size: 12px;
+	font-family: Arial;
+	line-height: 24px
+}
+
+.user-main .main-rights .lst-wrap ul li .pic-panel .pic_num .pic-num-bg
+	{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	z-index: 1;
+	background: #000;
+	opacity: .7;
+	filter: alpha(opacity = 70)
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	color: #565a5c;
+	padding-left: 18px;
+	font-size: 0;
+	width: 556px;
+	position: relative;
+	float: right;
+	height: 135px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel h2 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	font-size: 20px;
+	white-space: nowrap;
+	width: 100%;
+	line-height: 20px;
+	vertical-align: middle;
+	display: inline-block;
+	zoom: 1;
+	font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel h2 a {
+	ffont-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+	color: #009de8;
+	font-size: 20px;
+	font-weight: 700
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 {
+	width: 427px;
+	height: 63px;
+	float: left
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .where {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #555;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 7px;
+	font-weight: 700
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .where a {
+	float: left
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .where span {
+	color: #333;
+	font-size: 14px;
+	width: 70px;
+	display: inline-block;
+	margin-right: 14px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .where span .meters
+	{
+	text-align: left;
+	width: 47px;
+	padding-right: 25px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .where .region
+	{
+	width: 130px;
+	margin-right: 5px;
+	color: #333;
+	font-size: 14px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .other {
+	height: 31px;
+	line-height: 31px;
+	color: #888;
+	margin-top: 6px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .other .con {
+	display: inline-block;
+	zoom: 1;
+	vertical-align: middle;
+	width: 410px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-berak: break-all;
+	font-size: 14px;
+	color: #888
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .other .con a
+	{
+	color: #888
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .other .con span
+	{
+	margin: 0 8px;
+	color: #bbb
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan {
+	position: absolute;
+	bottom: 0
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency
+	{
+	font-size: 12px;
+	margin-top: 10px;
+	width: 785px;
+	position: relative
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency .view-label .taxfree
+	{
+	background: url('../../img/new-version/sprite_lb.png') no-repeat -98px
+		-7px;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	float: left
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency .view-label .taxfree-ex
+	{
+	border: 1px solid #86c7a2;
+	background-color: #f2fff8;
+	color: #57846a;
+	height: 23px;
+	line-height: 23px;
+	padding: 0 7px;
+	display: inline-block;
+	margin-right: 6px;
+	float: left
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency .view-label .unique-ex
+	{
+	border: 1px solid #4db500;
+	width: 34px;
+	height: 23px;
+	display: inline-block;
+	text-align: center;
+	line-height: 23px;
+	color: #588c31;
+	margin-right: 6px;
+	float: left
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency .view-label .unique-ex span
+	{
+	position: relative;
+	font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-1 .chanquan .agency .view-label .haskey-ex
+	{
+	border: 1px solid #357eac;
+	height: 23px;
+	display: inline-block;
+	text-align: center;
+	line-height: 23px;
+	color: #6e96af;
+	margin-right: 6px;
+	float: left;
+	padding: 0 7px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-3 {
+	width: 129px;
+	text-align: right;
+	float: left;
+	position: relative;
+	top: -6px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-3 .price {
+	color: #e4393c;
+	margin-top: 7px;
+	width: 100%;
+	position: relative
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-3 .price .num {
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 3px;
+	font-family: tahoma;
+	letter-spacing: -1px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-3 .price img {
+	position: absolute;
+	top: -10px;
+	right: -4px
+}
+
+.user-main .main-rights .lst-wrap ul li .info-panel .col-3 .price-pre {
+	font-size: 12px;
+	color: #999;
+	font-family: Arial;
+	margin-top: 8px
+}
+
+.user-main .main-rights .m-score {
+	font-size: 12px;
+	line-height: 1;
+	color: #394043;
+	padding: 15px 0;
+	border-bottom: 1px solid #e4e4e4
+}
+
+.user-main .main-rights .m-score .stars {
+	margin-left: 10px;
+	margin-right: 10px
+}
+
+.user-main .main-rights .m-score .star {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background-image: url(../img/star.png);
+	background-position: -55px 0;
+	margin-left: 5px
+}
+
+.user-main .main-rights .m-score .star:first-child {
+	margin-left: 0
+}
+
+.user-main .main-rights .m-score .star.active {
+	background-position: -42px 0
+}
+
+.user-main .main-rights .m-score .my-judge {
+	margin-top: 20px;
+	overflow: hidden
+}
+
+.user-main .main-rights .m-score .judge-text {
+	float: left;
+	width: 600px;
+	line-height: 20px
+}
+
+.user-main .main-rights .m-score .time {
+	float: right;
+	color: #9c9fa1
+}
+
+.user-main .pager_wrapper {
+	float: right;
+	width: 840px
+}
+
+.user-main .pager_wrapper .page-box {
+	text-align: center
+}
+
+.user-main .main-right {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	padding: 35px;
+	background-color: #fff;
+	border: 1px solid #e6e5e5;
+	width: 755px;
+	min-height: 380px;
+}
+
+.user-main .main-right .change-pwd {
+	width: 350px;
+	margin: 100px auto
+}
+
+.user-main .main-right .change-pwd li {
+	padding-top: 15px
+}
+
+.user-main .main-right .change-pwd li.error p {
+	color: #E4393C;
+	width: 253px;
+	float: right;
+	margin-top: 10px
+}
+
+.user-main .main-right .change-pwd span {
+	width: 95px;
+	display: inline-block;
+	font-size: 14px
+}
+
+.user-main .main-right .change-pwd input {
+	width: 237px;
+	height: 38px;
+	border: 1px solid #c8c8c8;
+	padding: 0 5px
+}
+
+.user-main .main-right .change-pwd input.save-pwd {
+	width: 247px;
+	background-color: #4fac6a;
+	color: #fff;
+	border: 0;
+	height: 40px;
+	cursor: pointer
+}
+
+.user-main .main-right .change-portrait .file {
+	position: relative;
+	width: 78px;
+	height: 39px;
+	overflow: hidden;
+	margin: 20px 0
+}
+
+.user-main .main-right .change-portrait .file .inp {
+	color: #fff;
+	background: #53ab6c;
+	width: 78px;
+	height: 39px;
+	line-height: 39px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0
+}
+
+.user-main .main-right .change-portrait .file input {
+	width: 78px;
+	height: 39px;
+	position: relative;
+	z-index: 1;
+	opacity: 0
+}
+
+.user-main .main-right .change-portrait .preview .fl {
+	background: #f5f5f5;
+	width: 273px;
+	height: 273px;
+	vertical-align: middle;
+	line-height: 273px;
+	text-align: center
+}
+
+.user-main .main-right .change-portrait .preview .fl label {
+	position: absolute;
+	z-index: 2;
+	color: #333;
+	left: 11px;
+	top: 0
+}
+
+.user-main .main-right .change-portrait .preview .fl .null {
+	width: 105px;
+	height: 154px;
+	vertical-align: middle;
+	position: absolute;
+	left: 50%;
+	margin-left: -53px;
+	top: 50%;
+	margin-top: -77px
+}
+
+.user-main .main-right .change-portrait .preview .fl .file-item {
+	position: relative;
+	z-index: 9
+}
+
+.user-main .main-right .change-portrait .preview .fl .file-item img {
+	width: 273px;
+	max-height: 273px
+}
+
+.user-main .main-right .change-portrait .preview .fl .parcanvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 273px;
+	height: 573px;
+	z-index: 10
+}
+
+.user-main .main-right .change-portrait .preview .fl .parcanvas canvas {
+	display: inline
+}
+
+.user-main .main-right .change-portrait .preview .fr {
+	width: 445px
+}
+
+.user-main .main-right .change-portrait .preview .fr p {
+	color: #333;
+	font-size: 14px;
+	position: relative;
+	top: -10px
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box {
+	background: #f5f5f5;
+	height: 196px;
+	padding-top: 47px
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box span {
+	display: inline-block;
+	width: 120px;
+	text-align: center;
+	margin-left: 35px;
+	padding-top: 15px
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box span.text-1
+	{
+	width: 100px;
+	margin-left: 0
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box div {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-3x
+	{
+	width: 120px;
+	height: 120px;
+	overflow: hidden;
+	margin-right: 50px;
+	margin-left: 35px
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-3x img
+	{
+	width: 100%;
+	height: 100%
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-2x
+	{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	margin-right: 50px
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-2x img
+	{
+	width: 100%;
+	height: 100%
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-1x
+	{
+	width: 34px;
+	height: 34px;
+	overflow: hidden
+}
+
+.user-main .main-right .change-portrait .preview .fr .preview-box .preview-1x img
+	{
+	width: 100%;
+	height: 100%
+}
+
+.user-main .main-right .reset-pwd-title {
+	font-family: PingFangSC-Semibold;
+	font-size: 16px;
+	color: #333333;
+	text-align: center;
+	margin-top: 90px
+}
+
+.user-main .main-right .reset-pwd-tip {
+	font-family: PingFangSC-Regular;
+	margin-top: 43px;
+	font-size: 14px;
+	color: #333333;
+	text-align: center
+}
+
+.user-main .main-right .reset-pwd-img {
+	text-align: center
+}
+
+.user-main .main-right .reset-pwd-img img {
+	width: 144px;
+	height: 144px;
+	padding: 30px
+}
+
+.user-main .main-right .reset-pwd-delete {
+	text-align: center;
+	color: #999999;
+	margin-bottom: 78px;
+	font-family: PingFangSC-Regular
+}
+
+.user-main .main-right .suc {
+	display: none
+}
+
+.user-main .main-right .suc span {
+	background: #53ab6c;
+	color: #fff;
+	display: block;
+	width: 85px;
+	height: 35px;
+	line-height: 35px;
+	margin: 20px auto;
+	text-align: center;
+	cursor: pointer
+}
+
+.user-main .main-right .suc span:hover {
+	background: #4FAC8C
+}
+
+.user-main .main-right .change-name ul {
+	width: 350px;
+	margin: 10px auto
+}
+
+.user-main .main-right .change-name ul li {
+	padding-top: 15px
+}
+
+.user-main .main-right .change-name ul li span {
+	width: 50px;
+	display: inline-block;
+	font-size: 14px
+}
+
+.user-main .main-right .change-name ul li input {
+	width: 237px;
+	height: 38px;
+	border: 1px solid #c8c8c8;
+	padding: 0 5px
+}
+
+.user-main .main-right .all-list .list-bot li {
+	border-bottom: 1px dashed #e9e9e9;
+	height: 170px;
+	position: relative
+}
+
+.user-main .main-right .all-list .list-bot li:hover .del-fav {
+	display: block
+}
+
+.user-main .main-right .title {
+	font-size: 22px;
+	font-weight: bold
+}
+
+.user-main .main-right .title span {
+	color: #E4393C;
+	margin: 0 10px
+}
+
+.user-main .main-right .tab {
+	margin-top: 20px;
+	background-color: #f5f5f5;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid #e6e6e6;
+	overflow: hidden
+}
+
+.user-main .main-right .tab span {
+	float: left;
+	padding: 0 25px;
+	font-size: 14px;
+	color: #888;
+	cursor: pointer
+}
+
+.user-main .main-right .tab span.hover {
+	background-color: #e6e5e5;
+	display: inline-block;
+	height: 38px;
+	color: #333;
+	cursor: default
+}
+
+.user-main .main-right .tab-shoudao {
+	display: none;
+	background-color: #edeeed;
+	line-height: 40px;
+	padding-left: 318px;
+	overflow: hidden
+}
+
+.user-main .main-right .tab-shoudao span {
+	float: left;
+	padding: 0 25px;
+	font-size: 14px;
+	color: #888;
+	cursor: pointer;
+	position: relative
+}
+
+.user-main .main-right .tab-shoudao span.hover {
+	color: #333;
+	cursor: default
+}
+
+.user-main .main-right .tab-shoudao span.hover i {
+	display: block
+}
+
+.user-main .main-right .tab-shoudao i {
+	display: none;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	width: 14px;
+	height: 8px;
+	margin-left: -7px;
+	background: url(../images/sprite_user.png) -250px -100px
+}
+
+.user-main .main-right .list {
+	margin-top: 20px;
+	overflow: hidden;
+	position: relative
+}
+
+.user-main .main-right .jingyan_list li {
+	border-bottom: 1px dashed #e5e5e5
+}
+
+.user-main .main-right .jingyan_list li:last-child {
+	border: none
+}
+
+.user-main .main-right .jingyan_list .pic-panel {
+	width: 135px;
+	height: 100px
+}
+
+.user-main .main-right .jingyan_list .pic-panel img {
+	width: 135px;
+	height: 100px
+}
+
+.user-main .main-right .jingyan_list .info-panel {
+	width: 575px
+}
+
+.user-main .main-right .jingyan_list .info-panel h2 {
+	padding-bottom: 0;
+	height: 40px;
+	white-space: normal;
+	width: 480px;
+	-webkit-box-direction: normal;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box
+}
+
+.user-main .main-right .jingyan_list .info-panel .like {
+	margin-top: 30px;
+	color: #9c9fa1;
+	font-size: 14px
+}
+
+.user-main .main-right .jingyan_list .info-panel .like .icon_zan {
+	margin-right: 9px;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	background: url(../../user/spriteImg/zan.png) 0 0
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 {
+	top: 0
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .ctime {
+	color: #9c9fa1;
+	font-size: 14px
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status
+	{
+	margin-top: 42px;
+	font-size: 18px
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status em
+	{
+	font-weight: 700
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status .checking
+	{
+	color: #00ae66
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status .past
+	{
+	color: #00ae66
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status .block
+	{
+	color: #9c9fa1
+}
+
+.user-main .main-right .jingyan_list .info-panel .col-3 .jingyan_status .essence
+	{
+	color: #48acf8
+}
+
+.user-main .main-right .jingyan_list .where span {
+	color: #00ae66
+}
+
+.user-main .main-right .layer_modal {
+	z-index: 10000;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 262px;
+	height: 118px;
+	margin-left: -131px;
+	margin-top: -59px;
+	background: #fff;
+	border-radius: 3px
+}
+
+.user-main .main-right .layer_modal .modal_title {
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	line-height: 100%;
+	margin: 25px 0
+}
+
+.user-main .main-right .layer_modal .btn_wrap {
+	width: 191px;
+	margin: 0 auto
+}
+
+.user-main .main-right .layer_modal .btn_wrap .modal_btn {
+	background: #00ae66;
+	border-radius: 3px;
+	display: inline-block;
+	width: 68px;
+	height: 27px;
+	line-height: 27px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer
+}
+
+.user-main .main-right .layer_modal .btn_wrap .modal_btn:first-child {
+	margin-right: 55px
+}
+
+.user-main .main-right .layer_modal .btn_wrap .modal_btn:hovor {
+	text-decoration: none
+}
+
+.user-main .main-right li {
+	clear: both;
+	padding-top: 30px
+}
+
+.user-main .main-right li .list-title {
+	border-bottom: 1px solid #ccc;
+	height: 45px;
+	line-height: 45px;
+	font-size: 20px;
+	color: #333333
+}
+
+.user-main .main-right li .list-title span {
+	color: #fff;
+	width: 49px;
+	height: 26px;
+	border-radius: 10px;
+	font-size: 14px;
+	display: inline-block;
+	line-height: 26px;
+	text-align: center;
+	margin-right: 13px;
+	position: relative;
+	top: -2px
+}
+
+.user-main .main-right li .list-title span.cj {
+	background-color: #dfc459
+}
+
+.user-main .main-right li .list-title span.jj {
+	background-color: #4fac6a
+}
+
+.user-main .main-right li .list-title span.zj {
+	background-color: #E4393C
+}
+
+.user-main .main-right li .list-title span.xs {
+	background-color: #5a99bd
+}
+
+.user-main .main-right li .list-title span.ts {
+	background-color: #ccc
+}
+
+.user-main .main-right li .list-title s {
+	font-size: 12px
+}
+
+.user-main .main-right li .list-title label {
+	color: #E4393C
+}
+
+.user-main .main-right li .pic-panel {
+	width: 175px;
+	float: left;
+	position: relative
+}
+
+.user-main .main-right li .pic-panel a {
+	width: 173px;
+	height: 130px;
+	display: inline-block;
+	position: relative
+}
+
+.user-main .main-right li .pic-panel a .sold,.user-main .main-right li .pic-panel a .sold1
+	{
+	background: url(../images/sprite_user.png) no-repeat -54px -64px;
+	width: 59px;
+	height: 59px;
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.user-main .main-right li .pic-panel a .sold1 {
+	background: url(../images/sprite_user.png) no-repeat -160px -94px
+}
+
+.user-main .main-right li .pic-panel img {
+	width: 173px;
+	height: 130px
+}
+
+.user-main .main-right li .pic-panel .pic-num {
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+	padding: 0 5px;
+	line-height: 23px;
+	height: 23px
+}
+
+.user-main .main-right li .pic-panel .pic-num .pic-num-bg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	z-index: 1;
+	background: #000;
+	opacity: .7;
+	filter: alpha(opacity = 70)
+}
+
+.user-main .main-right li .pic-panel .pic-num span {
+	position: relative;
+	z-index: 10
+}
+
+.user-main .main-right li .pic-panel .pic-num span .ico-pic {
+	margin-right: 3px
+}
+
+.user-main .main-right li .pic-panel .pic-num span .num {
+	position: relative;
+	top: 1px
+}
+
+.user-main .main-right li .pic-panel p {
+	font-size: 12px;
+	line-height: 30px;
+	color: #999
+}
+
+.user-main .main-right li .info-panel {
+	color: #565a5c;
+	padding-left: 18px;
+	font-size: 0;
+	width: 555px;
+	position: relative;
+	float: right;
+	height: 130px
+}
+
+.user-main .main-right li .info-panel h2 {
+	font-size: 19px;
+	white-space: nowrap;
+	width: 100%;
+	height: 32px;
+	line-height: 20px;
+	vertical-align: middle
+}
+
+.user-main .main-right li .info-panel h2 a {
+	font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+	color: #009de8;
+	font-size: 20px
+}
+
+.user-main .main-right li .info-panel .col-3 {
+	width: 120px;
+	text-align: right;
+	float: left;
+	position: absolute;
+	top: 24px;
+	right: 10px
+}
+
+.user-main .main-right li .info-panel .col-3 .price {
+	color: #E4393C;
+	margin-top: 6px;
+	width: 100%;
+	position: relative;
+	font-size: 16px
+}
+
+.user-main .main-right li .info-panel .col-3 .price .num {
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 3px;
+	font-family: tahoma
+}
+
+.user-main .main-right li .info-panel .col-3 .price img {
+	position: absolute;
+	top: -15px;
+	right: -4px
+}
+
+.user-main .main-right li .info-panel .col-3 .price-pre {
+	font-size: 12px;
+	color: #999;
+	font-family: Arial;
+	margin-top: 5px
+}
+
+.user-main .main-right li .info-panel .valid {
+	color: #888
+}
+
+.user-main .main-right li .where {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #555;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 7px
+}
+
+.user-main .main-right li .where a {
+	float: left
+}
+
+.user-main .main-right li .where span {
+	color: #333;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 14px
+}
+
+.user-main .main-right li .where span.zone {
+	border-right: 1px solid #ddd
+}
+
+.user-main .main-right li .where span.meters {
+	text-align: left;
+	width: 47px;
+	padding-right: 25px;
+	border-right: 1px solid #ddd
+}
+
+.user-main .main-right li .other {
+	height: 31px;
+	line-height: 31px;
+	color: #888;
+	margin-top: 6px
+}
+
+.user-main .main-right li .other .con {
+	width: 410px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-berak: break-all;
+	font-size: 14px;
+	color: #888
+}
+
+.user-main .main-right li .other .con a {
+	color: #888
+}
+
+.user-main .main-right li .other .con span {
+	margin: 0 8px;
+	color: #bbb
+}
+
+.user-main .main-right li .chanquan {
+	position: absolute;
+	bottom: 0
+}
+
+.user-main .main-right li .chanquan .agency {
+	font-size: 12px;
+	margin-top: 10px;
+	width: 555px;
+	position: relative
+}
+
+.user-main .main-right li .chanquan .agency span {
+	margin-bottom: 0
+}
+
+.user-main .main-right li .chanquan .agency span span {
+	margin-bottom: 0
+}
+
+.user-main .main-right .initial {
+	margin: 85px auto
+}
+
+.user-main .main-right .initial p {
+	text-align: center;
+	color: #888;
+	font-size: 14px;
+	margin-top: 20px
+}
+
+.user-main .main-right .initial .initial-logo {
+	background: url(../images/sprite_user.png) no-repeat -48px 0;
+	width: 62px;
+	height: 63px;
+	margin: 0 auto
+}
+
+.user-main .main-right .initial .blank-logo {
+	background: url(../../user/spriteImg/blank-logo.png) no-repeat;
+	width: 132px;
+	height: 163px;
+	margin: 0 auto
+}
+
+.user-main .main-right .initial .write-exp {
+	font-size: 18px;
+	font-weight: normal;
+	color: #fff;
+	line-height: 45px;
+	background: #00ae66;
+	border-radius: 3px;
+	text-align: center;
+	width: 134px;
+	height: 42px;
+	display: block;
+	margin: 36px auto 0
+}
+
+.user-main .main-right .initial .write-exp:hover {
+	text-decoration: none
+}
+
+.user-main .main-right .del-fav {
+	display: none;
+	background-color: #555;
+	width: 85px;
+	height: 33px;
+	color: #fff;
+	text-align: center;
+	line-height: 33px;
+	position: absolute;
+	right: 0
+}
+
+.user-main .main-right .del-fav .sold1 {
+	background: url(../images/sprite_user.png) no-repeat -160px -94px
+}
+
+.user-main .main-right .pic-num {
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	z-index: 5;
+	bottom: 0;
+	left: 0;
+	padding: 0 5px;
+	line-height: 23px;
+	height: 23px
+}
+
+.user-main .main-right .pic-num .pic-num-bg {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	z-index: 1;
+	background: #000;
+	opacity: .7;
+	filter: alpha(opacity = 70)
+}
+
+.user-main .main-right .pic-num span {
+	position: relative;
+	z-index: 10
+}
+
+.user-main .main-right .pic-num span .ico-pic {
+	margin-right: 3px
+}
+
+.user-main .main-right .pic-num span .num {
+	position: relative;
+	top: 1px
+}
+
+.user-main .main-right p {
+	font-size: 12px;
+	line-height: 30px;
+	color: #999
+}
+
+.user-main .my-agent {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	width: 825px
+}
+
+.user-main .my-agent .agent-list .agent-card {
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+	margin-bottom: 25px;
+	padding: 35px 35px 65px;
+	background-color: #fff;
+	border: 1px solid #e6e5e5
+}
+
+.user-main .my-agent .agent-list .agent-card .title {
+	padding-bottom: 42px;
+	border-bottom: 1px solid #e5e5e5
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info {
+	padding: 34px 0 40px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info img {
+	width: 54px;
+	height: 54px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc {
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 18px;
+	line-height: 1;
+	width: 440px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .agent-title .name
+	{
+	color: #394043;
+	font-size: 16px;
+	font-weight: bold;
+	vertical-align: middle
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .agent-title .agent-title-info
+	{
+	font-size: 14px;
+	font-weight: bold;
+	color: #9c9fa1;
+	margin-left: 10px;
+	vertical-align: middle
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .agent-title .new-talk
+	{
+	width: 50px;
+	height: 20px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #4285f4;
+	border-radius: 2px;
+	font-size: 12px;
+	line-height: 18px;
+	background: none;
+	text-decoration: none;
+	margin: 0 10px !important;
+	border: 1px solid #4285f4
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .agent-title .new-talk .im-icon
+	{
+	display: inline-block;
+	width: 13px;
+	height: 12px;
+	background: url(../../ershoufang/component/sprite.png) no-repeat 12px
+		12px #fff;
+	background: -webkit-image-set(url(../../ershoufang/component/sprite.png) 1x,
+		url(../../ershoufang/component/sprite@2x.png) 2x) no-repeat 12px 12px
+		#fff;
+	background-size: 606px 356px;
+	background-position: -469px -173px;
+	vertical-align: -1px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .agent-title .new-talk:hover
+	{
+	background-color: #f5f8fd
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-info .agent-desc .phone
+	{
+	color: #fa5741;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 12px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-title
+	{
+	margin: 0 65px 0 45px;
+	height: 12px;
+	line-height: 1;
+	color: #9c9fa1;
+	font-size: 12px;
+	position: relative;
+	text-align: center
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-title::before
+	{
+	content: " ";
+	width: 100%;
+	height: 1px;
+	background-color: #e5e5e5;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -1px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-title span
+	{
+	background-color: #fff;
+	position: relative;
+	padding: 0 .9375rem
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list
+	{
+	margin-top: 40px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item
+	{
+	padding: 0 0 50px 25px;
+	position: relative;
+	border-left: 2px solid #efefef;
+	margin-left: 14px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item:first-child .circle
+	{
+	width: 16px;
+	height: 16px;
+	top: 0;
+	left: -9px;
+	background-color: #00ae66
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item:first-child .circle span
+	{
+	width: 10px;
+	height: 10px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item:last-child
+	{
+	padding-bottom: 0
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .circle
+	{
+	background-color: #dadada;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 3px;
+	left: -6px;
+	border-radius: 50%
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .circle span
+	{
+	position: absolute;
+	display: block;
+	width: 6px;
+	height: 6px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	background-color: #fff;
+	border-radius: 50%
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item:last-child .line-cover
+	{
+	width: 2px;
+	height: 3px;
+	position: absolute;
+	top: 13px;
+	left: -2px;
+	background-color: #fff
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item:first-child .line-cover
+	{
+	display: none
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-btn
+	{
+	padding: 10px 16px;
+	background-color: #00ae66;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	border-radius: 2px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .see-evaluate-btn
+	{
+	background-color: #fff;
+	border: 1px solid #00ae66;
+	color: #00ae66
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-expire
+	{
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 16px;
+	font-size: 14px;
+	color: #9c9fa1
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .last-desc
+	{
+	font-size: 16px;
+	line-height: 1;
+	color: #394043
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part
+	{
+	padding: 25px 0 18px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content
+	{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 25px;
+	height: 25px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content .star-item
+	{
+	display: inline-block;
+	width: 21px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 18px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content .star-item:last-child
+	{
+	margin-right: 15px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content .star-empty .star-item
+	{
+	background-image: url(../img/star_empty.png)
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content .star-fill
+	{
+	overflow: hidden;
+	white-space: nowrap;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-content .star-fill .star-item
+	{
+	background-image: url(../img/star_fill.png)
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .star-part .star-desc
+	{
+	display: inline-block;
+	font-size: 14px;
+	color: #9c9fa1;
+	line-height: 25px;
+	vertical-align: middle
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-item
+	{
+	color: #394043;
+	font-size: 14px;
+	line-height: 28px
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-item .evaluate-item-name
+	{
+	display: inline-block;
+	vertical-align: top
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-item .evaluate-item-value
+	{
+	display: inline-block;
+	width: 550px;
+	vertical-align: top
+}
+
+.user-main .my-agent .agent-list .agent-card .agent-service .agent-service-list .agent-service-item .evaluate-item .my-impression
+	{
+	margin-bottom: 18px
+}
+
+.user-main .info-panel {
+	color: #565a5c;
+	padding-left: 18px;
+	font-size: 0;
+	width: 555px;
+	position: relative;
+	float: right;
+	height: 140px
+}
+
+.user-main .info-panel h2 {
+	font-size: 19px;
+	white-space: nowrap;
+	width: 100%;
+	height: 32px;
+	line-height: 20px;
+	vertical-align: middle
+}
+
+.user-main .info-panel h2 a {
+	font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", 微软雅黑, "Segoe UI", Tahoma, 宋体b8b体, SimSun, sans-serif;
+	color: #009de8;
+	font-size: 20px
+}
+
+.user-main .info-panel .col-3 {
+	width: 120px;
+	text-align: right;
+	float: left;
+	position: absolute;
+	top: 24px;
+	right: 10px
+}
+
+.user-main .info-panel .col-3 .price {
+	color: #E4393C;
+	margin-top: 6px;
+	width: 100%;
+	position: relative;
+	font-size: 16px
+}
+
+.user-main .info-panel .col-3 .price .num {
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 3px;
+	font-family: tahoma
+}
+
+.user-main .info-panel .col-3 .price img {
+	position: absolute;
+	top: -15px;
+	right: -4px
+}
+
+.user-main .info-panel .col-3 .price-pre {
+	font-size: 12px;
+	color: #999;
+	font-family: Arial;
+	margin-top: 5px
+}
+
+.user-main .info-panel .valid {
+	color: #888
+}
+
+.user-main .where {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #555;
+	height: 18px;
+	line-height: 18px;
+	margin-top: 7px
+}
+
+.user-main .where a {
+	float: left
+}
+
+.user-main .where span {
+	color: #333;
+	font-size: 14px;
+	display: inline-block;
+	margin-right: 14px
+}
+
+.user-main .where span.zone {
+	border-right: 1px solid #ddd
+}
+
+.user-main .where span.meters {
+	text-align: left;
+	width: 47px;
+	padding-right: 25px;
+	border-right: 1px solid #ddd
+}
+
+.user-main .other {
+	height: 31px;
+	line-height: 31px;
+	color: #888;
+	margin-top: 6px
+}
+
+.user-main .other .con {
+	width: 410px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-berak: break-all;
+	font-size: 14px;
+	color: #888
+}
+
+.user-main .other .con a {
+	color: #888
+}
+
+.user-main .other .con span {
+	margin: 0 8px;
+	color: #bbb
+}
+
+.user-main .chanquan {
+	position: absolute;
+	bottom: 0
+}
+
+.user-main .chanquan .agency {
+	font-size: 12px;
+	margin-top: 10px;
+	width: 555px;
+	position: relative
+}
+
+.user-main .chanquan .agency span {
+	margin-bottom: 0
+}
+
+.user-main .chanquan .agency span span {
+	margin-bottom: 0
+}

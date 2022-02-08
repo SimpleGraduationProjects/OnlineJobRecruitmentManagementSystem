@@ -1,0 +1,95 @@
+.info-primary {
+    width: 650px;
+    padding:10px 0;
+}
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.job-status {
+    color: #eee;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.job-banner .name {
+    font-size: 32px;
+    line-height: 45px;
+    padding: 11px 0 8px;
+    overflow: hidden;
+    width:100%
+}
+
+.job-banner .name h1 {
+    vertical-align: middle;
+    font-size: 32px;
+    max-width: 380px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+        float: left;
+}
+ .job-banner .name h1 {
+    font-size: 24px;
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 10px;
+    line-height: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 400px;
+    color:#fff;
+}
+
+.job-banner .salary {
+	    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    color: #fa6a43;
+    height: 42px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 600;
+}
+
+.job-banner .info-primary p {
+    color: rgba(255,255,255,.7);
+    margin-bottom: 10px;
+}
+
+.dolt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 2px;
+    margin: 0 7px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.7);
+}
+em {
+    font-style: normal;
+}
+
+.job-tags span {
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #b4c6d6;
+    background-color: rgba(132, 154, 174, .1);
+    border-radius: 2px;
+    margin-right: 6px;
+} 
+
+
+.job-banner .info-primary .job-tags {
+    padding-top: 8px;
+    height: 27px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+
+

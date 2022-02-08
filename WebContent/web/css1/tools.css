@@ -1,0 +1,129 @@
+.section_main{
+	    width: 1000px;
+    margin: 0 auto;
+}
+.mainContent {
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 6px 13px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.toolContent {
+    margin: 20px 0;
+    line-height: 1;
+}
+
+.toolContent .toolLeft {
+    float: left;
+    width: 600px; 
+}
+.calculatorItem:first-child {
+    margin-top: 0;
+}
+
+.calculatorItem {
+    margin: 5px 0;
+    overflow: hidden; 
+}
+.itemTitle, .selectItem {
+    display: inline-block;
+    line-height: 1.2;
+    color: #333;
+    font-size: 14px;
+}
+
+.itemTitle {
+    vertical-align: top;
+    width: 122px;
+    padding: 15px 0;
+    font-weight: 700;
+    float: left;
+    text-align: right;
+}
+.selectItem {
+    width: 435px;
+}
+
+.u-select {
+    padding: 5px 10px;
+   width: 435px;
+    float: left;
+   
+}
+
+.reg_select{
+	width: 280px;
+	height: 40px; line-height: 30px;
+	 padding: 5px 10px;
+}
+.u-select input,select{
+	padding: 5px 10px;
+}
+input,select {
+    height: 30px;
+    padding: 5px 10px;
+    line-height: 25px;
+    width: 260px;
+    background-color: #f5f5f6;
+    border: 1px solid #e3e7ed;
+}
+
+
+input:focus, select:focus {
+    box-shadow: 1px 2px 3px #d7f4f1;
+    border-color: #59cac2;
+}
+.calculatorBtn {
+    margin-top: 30px;
+    padding-left: 133px;
+}
+
+.calculatorBtn button {
+    display: inline-block;
+    border: 0;
+    border-radius: 2px;
+    width: 250px;
+    line-height: 42px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #5dd5c8;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+.registerbox{
+    position: relative;
+    padding: 20px;
+}
+.registerbox h1 {
+	margin-left: 100px;
+    width: 372px;
+    font-size: 35px;
+}
+.guideBox a {
+    color: #18c3b1;
+}
+.guideBox {
+ 	
+    margin-left: 435px;
+    top: 25px;
+}
+
+
+.def-btn {
+    display: inline-block;
+    border: 0;
+    border-radius: 2px;
+        width: 150px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #00ac65;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}

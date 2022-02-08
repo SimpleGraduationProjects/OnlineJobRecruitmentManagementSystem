@@ -1,0 +1,122 @@
+.infocardLi {
+    position: relative;
+    padding: 30px 20px 30px 20px;
+    border-bottom: 1px solid #edeef0;
+    overflow: hidden;
+}
+.fl {
+    float: left;
+}
+.infocardMessage {
+    overflow: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+.infocardMessage dt {
+    margin: 4px 18px 0 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    -o-border-radius: 45px;
+    -webkit-border-radius: 45px;
+    overflow: hidden;
+}
+.infocardMessage dt img {
+    width: 90px;
+    height: 90px;
+    border: 0;
+}
+.infocardMessageOne a {
+    display: block;
+    color: #333;
+        overflow: hidden;
+}
+.infocardMessageOne a:hover {
+    color: #ff552e;
+}
+
+.infocardName {
+    margin-right: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 22px;
+}
+.infocardBasic {
+    margin-top: 6px;
+    font-size: 16px;
+}
+
+.infocardBasic div em, .infocardBasic div i, .infocardBasic div span {
+    float: left;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+}
+
+.infocardBasic span {
+    margin: 0 8px;
+    font-size: 16px;
+    color: #eee;
+}
+
+.infocardMessage p {
+    margin-top: 12px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    color: #999;
+        overflow: hidden;
+}
+
+.infocardMark em {
+    display: inline-block;
+    margin: 9px 5px 0 0;
+    padding: 0 5px;
+    max-width: 86px;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    height: 20px;
+    line-height: 20px;
+    line-height: 20px\9\0;
+    vertical-align: middle;
+    color: #5babf0;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #5babf0;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+.infocardStatus {
+    width: 56px;
+    margin-top: 6px;
+    z-index: 888;
+    overflow: hidden;
+}
+
+.infocardStatus .mainList-down {
+    float: right;
+    margin-top: 15px;
+    width: 56px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    -o-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    cursor: pointer;
+}
+
+.infocardStatus em, .infocardStatus span {
+    display: block;
+    font-size: 14px;
+}
+
+.orangebtn {
+    background: #ff552e;
+}

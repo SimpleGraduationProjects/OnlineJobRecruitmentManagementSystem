@@ -1,0 +1,64 @@
+#ni-flist {
+    
+    margin-left: -10px;
+    font-size: 14px;
+}
+.ni-flist1, .ni-flist2, .ni-flist3 {
+    float: left;
+    margin-left: 10px;
+    width: 320px;
+}
+.ni-fbg span {
+    margin-left: 10px;
+    font-size: 18px;
+    line-height: 42px;
+}
+.ni-fbg {
+    width: auto;
+    height: 44px;
+    padding: 10px;
+    background: #F8f8f8;
+    border-radius: 44px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ni-glist-section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    height: auto;
+    padding-left: 15px;
+    overflow: auto;
+}
+.ni-f-icon {
+    float: left;
+}
+.ni-f-icon, .ni-f-icon img {
+    width: 44px;
+    height: 44px;
+    border-radius: 44px;
+}
+
+.ni-flist1 .short li, .ni-flist2 .short li , .ni-flist3 .short li{
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 140px;
+    height: 35px;
+    line-height: 35px;
+}
+.clear {
+    clear: both;
+    height: 10px;
+    visibility: hidden;
+    overflow: hidden;
+}
+.ni-fbg span a {
+    font-weight: bold;
+}
+
+a:hover {
+    color: #FF4500;
+}
