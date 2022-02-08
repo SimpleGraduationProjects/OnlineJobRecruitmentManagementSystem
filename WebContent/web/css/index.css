@@ -1,0 +1,369 @@
+@charset "UTF-8";
+
+
+
+.fast-register-box.top-sign-box {
+    height: 120px;
+    background: #5dd5c8;
+    position: relative;
+    z-index: 1004;
+    padding-top: 0;
+}
+
+.fast-register-box.top-sign-box .home-inner {
+    width: 1084px;
+    height: 100%;
+    margin: 0 auto;
+}
+.fast-register-box .icon-tip {
+    float: left;
+    height: 120px;
+    margin: 0 35px 0 0;
+}
+.inner {
+    width: 1184px;
+    margin: 0 auto;
+}
+.fast-register-box .step-form {
+    float: right;
+    position: relative;
+}
+.fast-register-box .step-form img {
+    height: 26px;
+    margin: 22px 0 8px 0;
+}
+.fast-register-box .btn-to-upload {
+    font-size: 14px;
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 2px;
+    color: #5dd5c8;
+    background: #fff;
+}
+.home-inner {
+    max-width: 1184px;
+}
+.column-search-panel {
+    position: relative;
+    z-index: 1003;
+}
+.column-search-panel .search-box {
+    width: 934px;
+    margin: 0 auto;
+    padding-top: 20px;
+    position: relative;
+    font-size: 13px;
+}
+.column-search-panel .search-form {
+    height: 50px;
+   
+}
+.search-form {
+    position: relative;
+    zoom: 1;
+    z-index: 1000;
+}
+.column-search-panel .search-form-con {
+    width: 626px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,.13);
+}
+.search-form-con {
+    float: left;
+    width: 794px;
+    margin-left: 130px;
+}
+.column-search-panel .search-form .ipt-wrap {
+    height: 48px;
+    border-color: #fff;
+}
+.search-form .ipt-wrap {
+    background: #fff;
+    border: 1px solid #53cac3;
+    border-left: none;
+    border-right: none;
+    height: 42px;
+    overflow: hidden;
+}
+.ipt-wrap {
+    position: relative;
+}
+
+.column-search-panel .ipt-search {
+    width: 626px;
+    font-size: 16px;
+    padding: 9px 19px;
+}
+.ipt-search {
+    width: 323px;
+    height: 50px;
+    line-height: 30px;
+    padding: 7px 15px;
+    border: 0;
+    font-size: 13px;
+    color: #414a60;
+}
+.column-search-panel .btn-search {
+    height: 50px;
+    line-height: 50px;
+    background-image: none;
+    font-size: 16px;
+    width: 140px;
+    float: right;
+    display: inline-block;
+}
+.btn-search {
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    background: #55cbc4;
+    border: 0;
+    cursor: pointer;
+    font-size: 0;
+    width: 90px;
+    padding: 0;
+    min-width: 0;
+    background-position: 34px -138px;
+    min-width: 0;
+}
+.column-search-panel .search-box .search-hot {
+    height: 41px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 794px;
+    margin-left: 130px;
+}
+.column-search-panel .search-hot {
+    padding: 9px 0 26px 0;
+}
+.search-hot {
+    font-size: 13px;
+    color: #9fa3b0;
+    padding: 16px 0;
+}
+.column-search-panel .search-hot b {
+    margin-right: 18px;
+}
+.search-hot b {
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 5px;
+}
+.column-search-panel .search-hot a {
+    color: #00c2b3;
+    margin-bottom: 10px;
+}
+.search-hot a {
+    display: inline-block;
+    margin-right: 22px;
+    color: #9fa3b0;
+}
+.home-sider {
+    width: 384px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.job-menu, .school-job-menu {
+    background: #fff;
+    color: #61687c;
+    position: relative;
+    z-index: 1002;
+    box-shadow: 5px 5px 15px rgba(3,0,0,.04);
+    padding-top: 0;
+}
+.menu-sub {
+    padding: 20px 0 0 20px;
+}
+.menu-sub h4 {
+    float: left;
+    width: 104px;
+    color: #8d92a1;
+    font-size: 13px;
+    padding-top: 2px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.menu-sub .text {
+	min-height: 280px;
+}
+.text li{
+	display: inline-block;
+	padding:0 20px 20px 0;
+}
+.menu-sub .text a {
+    margin-left: 0;
+    margin-right: 5px;
+}
+.job-menu .show-all {
+    border-top: dashed 1px #ecedef;
+    color: #00c2b3;
+    height: 45px;
+    padding: 0 20px;
+    line-height: 45px;
+}
+.home-main {
+    margin-left: 400px;
+    min-width: 697px;
+}
+.slider-box {
+    position: relative;
+    overflow: hidden;
+}
+.promotion-main {
+    font-size: 0;
+    line-height: 0;
+    height: 340px;
+    position: relative;
+}
+.promotion-main table {
+    width: 100%!important;
+}
+
+.promotion-main tr {
+    min-height: 114px;
+}
+.promotion-main td {
+    padding-right: 2px;
+    padding-bottom: 2px;
+    width: auto;
+    vertical-align: top;
+}
+
+.city-site .common-tab-box {
+    clear: both;
+    margin-top: 37px;
+        margin-bottom: 40px;
+    overflow: hidden;
+    width: 100%;
+    
+}
+.city-site .common-tab-box .box-title {
+    font-size: 24px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 24px;
+}
+.city-site .common-tab-box .box-title::after, .city-site .common-tab-box .box-title::before {
+    content: '';
+    display: inline-block;
+    vertical-align: 8px;
+    margin: 0 10px;
+    width: 50px;
+    height: 1px;
+    background: #d1d4db;
+}
+.city-site .common-tab-box ul.cur {
+    display: block;
+    font-weight: 400;
+    width: 110%;
+    overflow: hidden
+}
+.city-site .merge-city-job ul li {
+    height: 130px;
+    width: 384px;
+    float: left;
+    margin: 0 16px 16px 0;
+    background: #fff;
+}
+
+.city-site .merge-city-job li .sub-li {
+    display: block;
+    height: 130px;
+    width: 384px;
+    font-size: 0;
+    padding: 16px 20px;
+    box-sizing: border-box;
+}
+.city-site .merge-city-job .sub-li a.job-info {
+    padding: 0;
+    width: 100%;
+    vertical-align: middle;
+}
+.city-site .merge-city-job li a {
+    display: inline-block;
+}
+.city-site .merge-city-job li .sub-li .sub-li-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.city-site .merge-city-job li .sub-li .sub-li-top .name {
+    position: relative;
+    max-width: 200px;
+    font-size: 15px;
+    color: #414a60;
+    margin-right: 8px;
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.city-site .merge-city-job li .sub-li .sub-li-top .salary {
+    font-size: 15px;
+    color: #fd7240;
+    line-height: normal;
+    flex: 1;
+    text-align: right;
+    max-width: none;
+}
+.city-site .merge-city-job li .salary {
+   
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.city-site .merge-city-job li a.job-info p.job-text {
+    font-size: 13px;
+    color: #8d92a1;
+    padding-right: 0;
+    line-height: 28px;
+    max-width: 240px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+}
+.city-site .merge-city-job li .sub-li .sub-li-bottom {
+    border-top: 1px solid #eef0f5;
+    display: flex;
+    margin-top: 8px;
+    padding-top: 12px;
+}
+.city-site .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-commany-info {
+    font-size: 13px;
+    color: #8d92a1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.city-site .merge-city-job li .sub-li .sub-li-bottom .sub-li-bottom-commany-info .type {
+    max-width: 340px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.city-site .common-tab-more {
+    text-align: center;
+    margin-top: 4px;
+}
+.city-site .common-tab-more .btn {
+    width: 216px;
+    font-size: 15px;
+    height: 32px;
+    line-height: 32px;
+    background: #5dd5c8;
+    color: #fff;
+}
+
+/** job-view start*/
+/** job-view end*/
+
+

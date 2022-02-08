@@ -1,0 +1,139 @@
+@charset "UTF-8";
+body {
+    background: #f5f7f9;
+    min-width: 1184px;
+    line-height: 26px;
+    color: #111;
+    font-size: 14px;
+}
+#main {
+    min-height: 561px;
+}
+#main, #wrap {
+    position: relative;
+}
+
+.list-banner {
+    height: 146px;
+    background: url(../images/list-banner.jpg) center 0 no-repeat #3d4f5e;
+    background-size: cover;
+}
+
+.list-banner-paper {
+    background: url(../images/paper.jpg) no-repeat center;
+    height: 146px;
+}
+
+.list-banner .text, .list-banner-paper .text{
+    text-align: center;
+    color: #fff;
+    padding-top: 50px;
+}
+
+.list-news {
+    padding: 25px 100px;
+}
+
+.list-news {
+    background: #fff;
+    margin-top: 15px;
+    padding: 25px 70px;
+}
+
+.list-news li {
+    padding: 35px 0;
+    border-bottom: 1px #ededed solid;
+}
+.list-news .img-wrap {
+    float: left;
+    width: 284px;
+    height: 156px;
+    position: relative;
+}
+
+.list-news .img-wrap .img {
+    display: block;
+    width: 284px;
+    height: 156px;
+    overflow: hidden;
+    -webkit-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+}
+
+.list-news .img-wrap .img img {
+    -webkit-transition: all ease-out .3s;
+    transition: all ease-out .3s;
+}
+
+.list-news .img-wrap .badge {
+    position: absolute;
+    width: 56px;
+    height: 24px;
+    padding-left: 5px;
+    top: 12px;
+    left: -5px;
+    background: url(../images/sub-icons.png) 0 0 no-repeat;
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+}
+.list-news .text {
+    margin-left: 330px;
+}
+.list-news .text-title {
+    font-size: 20px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-news .summary {
+    height: 75px;
+    line-height: 25px;
+    color: #666;
+    padding: 20px 0 0;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.detail {
+    padding-top: 15px;
+}
+.detail-main {
+    width: 796px;
+    float: left;
+}
+.detail-content {
+    background: #fff;
+    padding: 35px 45px 45px;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+.detail-content .title {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 400;
+}
+
+.info {
+    color: #999;
+    line-height: 18px;
+    font-size: 14px;
+}
+.info .author {
+    float: left;
+}
+
+.info .author em {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+    margin: 0 5px;
+    font-weight: 700;
+}
+
+
+
+

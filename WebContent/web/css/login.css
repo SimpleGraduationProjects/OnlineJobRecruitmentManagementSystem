@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+
+#page_login .main {
+    width: 100%;
+    background-color: #12ADA9;
+   /* height: 626px;**/
+    height: 90%;
+    position: relative;
+    background: url(../images/sem10/bottom-side.png) #12ADA9 repeat-x left bottom;
+}
+
+#page_login .box {
+    margin-top: 60px;
+    width: auto;
+    color: #414a60;
+    height: 426px;
+    float: right;
+}
+
+#page_login .sign-wrap {
+    position: static;
+    width: 410px;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+}
+
+#page_login .sign-wrap .sign-form {
+    z-index: 1001;
+}
+
+.sign-form {
+    border-radius: 0;
+    width: 324px;
+    height: 475px;
+    padding: 35px 43px 0;
+    background: #fff;
+     position: relative;
+    box-shadow: 1px 2px 15px rgba(0,0,0,.3);
+}
+
+.sign-form {
+    position: relative;
+}
+.sign-form .title {
+    color: #00C2B3;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 32px;
+    position: relative;
+    text-align: center;
+}
+.tip-error {
+    margin-bottom: -25px;
+}
+
+.sign-form .tip-error {
+    text-align: center;
+    color: #fc6c38;
+    height: 29px;
+    line-height: 18px;
+    padding-top: 7px;
+}
+
+ .sign-form form {
+    padding-top: 5px;
+}
+
+
+
+.ipt {
+    padding: 6px 12px 5px 7px;
+    min-height: 22px;
+    line-height: 22px;
+    border: 1px solid #e3e7ed;
+    font-size: 13px;
+    vertical-align: middle;
+    min-width: 300px;
+}
+.sign-form .text-tip .link-signup {
+    text-align: right;
+}
+.sign-form  .text-tip a {
+    width: 100%;
+    float: left;
+}
+
+@media screen and (min-width: 700px){
+	.main .container {
+	    width: 1200px;
+	    height: 100%;
+	    margin: 0 auto;
+	}
+	.main .theme {
+	    box-sizing: border-box;
+	    height: 100%;
+	    position: relative;
+	    padding-top: 65px;
+	    font-family: PingFangSC;
+	    color: rgba(255,255,255,1);
+	    overflow: hidden;
+	    text-align: center;
+	}
+	
+	 .theme .title {
+	    /* width: 100%; */
+	    font-size: 42px;
+	    /* font-weight: 600; */
+	    font-family: PingFangSC-Semibold;
+	    line-height: 60px;
+	    padding-right: 80px;
+	}
+	.theme .desc {
+	    height: 40px;
+	    font-size: 20px;
+	    font-weight: 400;
+	    font-family: PingFangSC-Regular;
+	    line-height: 40px;
+	    padding-right: 80px;
+	}
+	.theme img {
+	    display: block;
+	    width: 694px;
+	    margin-top: -30px;
+	}
+}

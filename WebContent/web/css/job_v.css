@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+
+.job-banner {
+    height: auto;
+    padding: 24px 0;
+    background: #444c60 url(../images/detail-bg.jpg) center center no-repeat;
+    color: #fff;
+}
+.home-inner {
+    max-width: 1184px;
+}
+.job-primary.detail-box {
+    border: none;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.job-primary {
+    height: 48px;
+    color: #4a4160;
+    padding: 20px 0 19px;
+    margin: 0 30px;
+    border-bottom: 1px #f2f2f5 solid;
+    position: relative;
+}
+.job-primary.detail-box .info-primary {
+    width: 650px;
+}
+.job-primary .info-primary {
+    float: left;
+}
+.job-status {
+    color: rgba(255,255,255,.7);
+    font-size: 14px;
+    line-height: 20px;
+}
+.job-status span {
+    vertical-align: middle;
+}
+.job-banner .name {
+    font-size: 32px;
+    line-height: 45px;
+        color: #fff;
+    font-weight: 400;
+    padding: 11px 0 8px;
+}
+.company-banner .name h1, .job-banner .name h1 {
+    vertical-align: middle;
+    font-size: 32px;
+    max-width: 380px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: inline-block;
+    font-weight: 400;
+    margin-right: 10px;
+    line-height: 35px;
+    overflow: hidden;
+}
+.job-banner .salary {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fa6a43;
+    height: 42px;
+    font-size: 30px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.job-banner .info-primary p {
+    color: rgba(255,255,255,.7);
+    margin-bottom: 10px;
+}
+.job-banner .info-primary p .text-city {
+    color: rgba(255,255,255,.7);
+}
+.dolt {
+    display: inline-block;
+    vertical-align: middle;
+    width: 2px;
+    height: 2px;
+    margin: 0 7px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,.7);
+}
+.detail-box .tag-container {
+    line-height: 0;
+}
+.job-banner .info-primary .job-tags {
+    padding-top: 8px;
+    height: 27px;
+    overflow: hidden;
+    display: inline-block;
+}
+.company-new .tag-more .link-more, .job-tags span, .tag-container .tag-more .link-more {
+    display: inline-block;
+    padding: 0 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #5ed5c8;
+    color: #5ed5c8;
+    height: 23px;
+    line-height: 23px;
+    border-radius: 13px;
+    margin-top: 0;
+    vertical-align: top;
+}
+.job-banner .job-op {
+    width: 298px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 0;
+    margin-top: -47px;
+}
+
+
+.detail-box .job-op .btn-container {
+    font-size: 0;
+}
+
+.detail-box .job-op .btn-container .btn {
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    box-sizing: border-box;
+}
+.detail-box .job-op .btn-more, .detail-box .job-op .btn-startchat {
+    display: block;
+    width: 296px;
+    margin-top: 0;
+    float: none;
+}
+
+.job-box {
+    margin-top: 30px;
+}
+.company-sider, .job-sider {
+    float: right;
+    width: 284px;
+    padding-bottom: 40px;
+}
+.promotion-img {
+    margin-bottom: 16px!important;
+}
+
+.promotion-img img {
+    display: block;
+    width: 284px;
+}
+
+.job-detail {
+    position: relative;
+    padding-right: 25px;
+    border-right: 1px #f5f7f9 solid;
+    margin-right: 322px;
+    padding-bottom: 45px;
+    min-height: 813px;
+}
+.job-detail .detail-content {
+    clear: left;
+}
+.job-sec {
+    position: relative;
+}
+
+.job-sec h3 {
+    font-weight: 700;
+    font-size: 15px;
+    color: #424a5e;
+    line-height: 50px;
+    padding: 0 0 10px 0;
+    margin-bottom: 0;
+    background: url(../images/line-sec.png) 0 45px no-repeat;
+}
+.detail-content .text {
+    word-break: break-all;
+}
+
+.job-sec .text, .secretary-sec .text {
+    color: #61687c;
+    line-height: 36px;
+}
+
