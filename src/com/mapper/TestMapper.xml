@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.TestMapper">
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and id= #{id}
+            </if>
+			<if test="xtid!=null and xtid!=0">
+				and xtid= #{xtid}
+                    </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultType="Test">
+		<if test="page">
+		select * from test
+		</if>
+		
+		<if test="!page">
+		select * from   test  
+		</if>
+		<include refid="Where_Clause" />
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from test
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryTestById" parameterType="int" resultType="Test">
+		select * from test where id=${value}
+	</select>
+	<insert id="insertTest" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Test">
+		insert into test
+		(xtid,content,option1,option2,option3,option4,okey,score)
+		values
+		(#{xtid},#{content},#{option1},#{option2},#{option3},#{option4},#{okey},#{score});
+	</insert>
+	<update id="updateTest" parameterType="Test">
+		update test set
+		xtid=#{xtid},content=#{content},option1=#{option1},option2=#{option2},option3=#{option3},option4=#{option4},okey=#{okey},score=#{score}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteTest" parameterType="int">
+		delete from test where id=${value}
+	</delete>
+</mapper>
+ 

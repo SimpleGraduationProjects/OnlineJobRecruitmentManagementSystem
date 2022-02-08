@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.UserMapper">
+	<resultMap type="User" id="queryMap">
+		<id property="id" column="id" />
+		<result property="uname" column="uname" />
+		<result property="upwd" column="upwd" />
+		<result property="name" column="name" />
+		<result property="sex" column="sex" />
+		<result property="tel" column="tel" />
+		<result property="email" column="email" />
+		<result property="birthday" column="birthday" />
+		<result property="photo" column="photo" />
+		<result property="xueli" column="xueli" />
+		<result property="catelogid" column="catelogid" />
+		<result property="xinzi" column="xinzi" />
+		<result property="gzjy" column="gzjy" />
+		<result property="gzjl" column="gzjl" />
+		<result property="school" column="school" />
+		<result property="zhuanye" column="zhuanye" />
+		<result property="sdate" column="sdate" />
+		<result property="zt" column="zt" />
+		<result property="youdian" column="youdian" />
+		<result property="state" column="state" />
+		<association property="catelogVO" javaType="Catelog">
+			<id property="id" column="id" />
+			<result property="name" column="b_name" />
+			<result property="miaoshu" column="miaoshu" />
+		</association>
+	</resultMap>
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and a.id= #{id}
+                </if>
+			<if test="uname!=null and uname!=''">
+				and a.uname=#{uname}
+                            </if>
+			<if test="upwd!=null and upwd!=''">
+				and a.upwd=#{upwd}
+                            </if>
+			<if test="name!=null and name!=''">
+				and a.name like concat(concat('%',#{name}),'%')
+                            </if>
+			<if test="xueli!=null and xueli!=''">
+				and a.xueli=#{xueli}
+                            </if>
+			<if test="catelogid!=null and catelogid!=0">
+				and a.catelogid= #{catelogid}
+                        </if>
+			<if test="zt!=null and zt!=''">
+				and a.zt=#{zt}
+                            </if>
+            	<if test="state!=null">
+				and a.state=#{state}
+                            </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultMap="queryMap">
+		<if test="page">
+		select * from (
+		</if>
+		<if test="!page">
+		select * from (
+		</if>
+		select a.*,b.name b_name,b.miaoshu from tuser a left join catelog b on
+		a.catelogid=b.id
+		<include refid="Where_Clause" />
+		)x
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(*) nums from tuser a left join catelog b on
+		a.catelogid=b.id
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryUserById" parameterType="int" resultType="User">
+		select * from tuser where id=${value}
+	</select>
+	<insert id="insertUser" useGeneratedKeys="true" keyProperty="id"
+		parameterType="User">
+		insert into tuser
+		(uname,upwd,name,sex,tel,email,birthday,photo,xueli,catelogid,xinzi,gzjy,gzjl,school,zhuanye,sdate,zt,youdian,state)
+		values
+		(#{uname},#{upwd},#{name},#{sex},#{tel},#{email},#{birthday},#{photo},#{xueli},#{catelogid},#{xinzi},#{gzjy},#{gzjl},#{school},#{zhuanye},#{sdate},#{zt},#{youdian},#{state});
+	</insert>
+	<update id="updateUser" parameterType="User">
+		update tuser set
+		upwd=#{upwd},name=#{name},sex=#{sex},tel=#{tel},email=#{email},birthday=#{birthday},photo=#{photo},xueli=#{xueli},catelogid=#{catelogid},xinzi=#{xinzi},gzjy=#{gzjy},gzjl=#{gzjl},school=#{school},zhuanye=#{zhuanye},sdate=#{sdate},zt=#{zt},youdian=#{youdian},state=#{state}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteUser" parameterType="int">
+		delete from tuser where id=${value}
+	</delete>
+</mapper>
+ 

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.BossMapper">
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and id= #{id}
+            </if>
+			<if test="uname!=null and uname!=''">
+				and uname=#{uname}
+                        </if>
+			<if test="upwd!=null and upwd!=''">
+				and upwd=#{upwd}
+                        </if>
+			<if test="name!=null and name!=''">
+				and name like concat(concat('%',#{name}),'%')
+                        </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultType="Boss">
+		<if test="page">
+		select * from boss
+		</if>
+		<if test="!page">
+		select * from   boss  
+		</if>
+		
+		<include refid="Where_Clause" />
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+        </if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from boss
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryBossById" parameterType="int" resultType="Boss">
+		select * from boss where id=${value}
+	</select>
+	<insert id="insertBoss" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Boss">
+		insert into boss
+		(uname,upwd,name,sex,zhiwei,tel)
+		values
+		(#{uname},#{upwd},#{name},#{sex},#{zhiwei},#{tel});
+	</insert>
+	<update id="updateBoss" parameterType="Boss">
+		update boss set
+		uname=#{uname},upwd=#{upwd},name=#{name},sex=#{sex},zhiwei=#{zhiwei},tel=#{tel}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteBoss" parameterType="int">
+		delete from boss where id=${value}
+	</delete>
+</mapper>
+ 

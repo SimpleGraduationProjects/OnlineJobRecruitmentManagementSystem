@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.JobMapper">
+	<resultMap type="Job" id="queryMap">
+		<id property="id" column="id" />
+		<result property="bid" column="bid" />
+		<result property="catelogid" column="catelogid" />
+		<result property="name" column="name" />
+		<result property="minsalary" column="minsalary" />
+		<result property="maxsalary" column="maxsalary" />
+		<result property="address" column="address" />
+		<result property="quyu" column="quyu" />
+		<result property="xueli" column="xueli" />
+		<result property="jingyan" column="jingyan" />
+		<result property="fuli" column="fuli" />
+		<result property="miaoshu" column="miaoshu" />
+		<result property="cdate" column="cdate" />
+		<result property="zt" column="zt" />
+		
+		<association property="catelogVO" javaType="Catelog">
+			<id property="id" column="id" />
+			<result property="name" column="c_name" />
+			<result property="miaoshu" column="c_miaoshu" />
+		</association>
+	</resultMap>
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and a.id= #{id}
+                </if>
+			<if test="bid!=null and bid!=0">
+				and a.bid= #{bid}
+                        </if>
+			<if test="catelogid!=null and catelogid!=0">
+				and a.catelogid= #{catelogid}
+                        </if>
+			<if test="name!=null and name!=''">
+				and a.name like concat(concat('%',#{name}),'%')
+                            </if>
+			<if test="minsalary!=null and minsalary!=0">
+				and a.minsalary= #{minsalary}
+                        </if>
+			<if test="maxsalary!=null and maxsalary!=0">
+				and a.maxsalary= #{maxsalary}
+                        </if>
+			<if test="quyu!=null and quyu!=''">
+				and a.quyu=#{quyu}
+                            </if>
+			<if test="xueli!=null and xueli!=''">
+				and a.xueli=#{xueli}
+                            </if>
+            <if test="xinzIndex!=null and xinzIndex!=0">
+				<if test="xinzIndex==1">
+					and  minsalary &lt; 1000
+				</if>
+				
+				<if test="xinzIndex==2">
+					and (( minsalary &gt; 1000 AND minsalary &lt;= 2000) OR ( maxsalary &gt; 1000 AND maxsalary &lt;= 2000) )
+				</if>
+				
+				<if test="xinzIndex==3">
+					and (( minsalary &gt; 2000 AND minsalary &lt;= 4000) OR ( maxsalary &gt; 2000 AND maxsalary &lt;= 4000) )
+				</if>
+				
+				<if test="xinzIndex==4">
+					and (( minsalary &gt; 4000 AND minsalary &lt;= 8000) OR ( maxsalary &gt; 4000 AND maxsalary &lt;= 8000) )
+				</if>
+				
+				<if test="xinzIndex==5">
+					and (( minsalary &gt; 8000 AND minsalary &lt;= 12000) OR ( maxsalary &gt; 8000 AND maxsalary &lt;= 12000) )
+				</if>
+				
+				<if test="xinzIndex==6">
+					and (( minsalary &gt; 12000 AND minsalary &lt;= 20000) OR ( maxsalary &gt; 12000 AND maxsalary &lt;= 20000) )
+				</if>
+				
+				<if test="xinzIndex==7">
+					and maxsalary &gt; 20000
+				</if>
+				
+			</if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultMap="queryMap">
+		<if test="page">
+		select * from (
+		</if>
+		<if test="!page">
+		select * from (
+		</if>
+		select a.*,c.name
+		c_name,c.miaoshu c_miaoshu from job a 
+		left join catelog c on a.catelogid=c.id
+		<include refid="Where_Clause" />
+		)x
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(*) nums from job a left join catelog c on a.catelogid=c.id
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryJobById" parameterType="int" resultType="Job">
+		select
+		* from job where id=${value}
+	</select>
+	<insert id="insertJob" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Job">
+		insert into job
+		(bid,catelogid,name,minsalary,maxsalary,address,quyu,xueli,jingyan,fuli,miaoshu,cdate,zt)
+		values
+		(#{bid},#{catelogid},#{name},#{minsalary},#{maxsalary},#{address},#{quyu},#{xueli},#{jingyan},#{fuli},#{miaoshu},#{cdate},#{zt});
+	</insert>
+	<update id="updateJob" parameterType="Job">
+		update job set
+		bid=#{bid},catelogid=#{catelogid},name=#{name},minsalary=#{minsalary},maxsalary=#{maxsalary},address=#{address},quyu=#{quyu},xueli=#{xueli},jingyan=#{jingyan},fuli=#{fuli},miaoshu=#{miaoshu},zt=#{zt}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteJob" parameterType="int">
+		delete from job where id=${value}
+	</delete>
+</mapper>
+ 

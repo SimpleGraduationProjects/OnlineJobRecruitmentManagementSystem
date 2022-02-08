@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.OfferMapper">
+	<resultMap type="Offer" id="queryMap">
+		<id property="id" column="id" />
+		<result property="uid" column="uid" />
+		<result property="bid" column="bid" />
+		<result property="jobid" column="jobid" />
+		<result property="zt" column="zt" />
+		<result property="content" column="content" />
+		<result property="jieguo" column="jieguo" />
+		<result property="cdate" column="cdate" />
+		<association property="userVO" javaType="User">
+			<id property="id" column="id" />
+			<result property="uname" column="uname" />
+			<result property="upwd" column="upwd" />
+			<result property="name" column="name" />
+			<result property="sex" column="sex" />
+			<result property="tel" column="tel" />
+			<result property="email" column="email" />
+			<result property="birthday" column="birthday" />
+			<result property="photo" column="photo" />
+			<result property="xueli" column="xueli" />
+			<result property="catelogid" column="catelogid" />
+			<result property="xinzi" column="xinzi" />
+			<result property="gzjy" column="gzjy" />
+			<result property="school" column="school" />
+			<result property="zhuanye" column="zhuanye" />
+			<result property="sdate" column="sdate" />
+			<result property="zt" column="b_zt" />
+			<result property="youdian" column="youdian" />
+		</association>
+		<association property="jobVO" javaType="Job">
+			<id property="id" column="id" />
+			<result property="bid" column="c_bid" />
+			<result property="catelogid" column="c_catelogid" />
+			<result property="name" column="c_name" />
+			<result property="minsalary" column="minsalary" />
+			<result property="maxsalary" column="maxsalary" />
+			<result property="address" column="address" />
+			<result property="quyu" column="quyu" />
+			<result property="xueli" column="c_xueli" />
+			<result property="jingyan" column="jingyan" />
+			<result property="fuli" column="fuli" />
+			<result property="miaoshu" column="c_miaoshu" />
+			<result property="cdate" column="c_cdate" />
+		</association>
+	</resultMap>
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and a.id= #{id}
+                </if>
+			<if test="uid!=null and uid!=0">
+				and a.uid= #{uid}
+                        </if>
+            <if test="jobid!=null and jobid!=0">
+				and a.jobid= #{jobid}
+                        </if>
+			<if test="bid!=null and bid!=0">
+				and a.bid= #{bid}
+                        </if>
+			<if test="zt!=null and zt!=''">
+				and a.zt=#{zt}
+                            </if>
+			<if test="jieguo!=null and jieguo!=0">
+				and a.jieguo= #{jieguo}
+                        </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultMap="queryMap">
+		<if test="page">
+		select * from (
+		</if>
+		<if test="!page">
+		select * from (
+		</if>
+		
+		select
+		a.*,b.uname,b.upwd,b.name,b.sex,b.tel,b.email,b.birthday,b.photo,b.xueli,b.catelogid,b.xinzi,b.gzjy,b.school,b.zhuanye,b.sdate,b.zt
+		b_zt,b.youdian,c.bid c_bid,c.catelogid c_catelogid,c.name c_name,c.minsalary,c.maxsalary,c.address,c.quyu,c.xueli c_xueli,c.jingyan,c.fuli,c.miaoshu c_miaoshu,c.cdate c_cdate,c.zt c_zt
+		from offer a left join tuser b on a.uid=b.id left join job c on
+		a.jobid=c.id
+		<include refid="Where_Clause" />
+		
+		)x
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(*) nums from offer a left join tuser b on a.uid=b.id
+		left join job c on a.jobid=c.id
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryOfferById" parameterType="int" resultType="Offer">
+		select * from offer where id=${value}
+	</select>
+	<insert id="insertOffer" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Offer">
+		insert into offer
+		(uid,bid,zt,content,jieguo,cdate,jobid)
+		values
+		(#{uid},#{bid},#{zt},#{content},#{jieguo},#{cdate},#{jobid});
+	</insert>
+	<update id="updateOffer" parameterType="Offer">
+		update
+		offer set
+		zt=#{zt},content=#{content},jieguo=#{jieguo}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteOffer" parameterType="int">
+		delete from offer where id=${value}
+	</delete>
+</mapper>
+ 

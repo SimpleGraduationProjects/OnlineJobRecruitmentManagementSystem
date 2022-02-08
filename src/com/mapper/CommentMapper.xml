@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.CommentMapper">
+	<resultMap type="Comment" id="queryMap">
+		<id property="id" column="id" />
+		<result property="uid" column="uid" />
+		<result property="bid" column="bid" />
+		<result property="content" column="content" />
+		<result property="cdate" column="cdate" />
+		<association property="userVO" javaType="User">
+			<id property="id" column="id" />
+			<result property="uname" column="uname" />
+			<result property="upwd" column="upwd" />
+			<result property="name" column="name" />
+			<result property="sex" column="sex" />
+			<result property="tel" column="tel" />
+			<result property="email" column="email" />
+			<result property="birthday" column="birthday" />
+			<result property="photo" column="photo" />
+			<result property="xueli" column="xueli" />
+			<result property="catelogid" column="catelogid" />
+			<result property="xinzi" column="xinzi" />
+			<result property="gzjy" column="gzjy" />
+			<result property="school" column="school" />
+			<result property="zhuanye" column="zhuanye" />
+			<result property="sdate" column="sdate" />
+			<result property="zt" column="zt" />
+			<result property="youdian" column="youdian" />
+		</association>
+		<association property="bossVO" javaType="Boss">
+			<id property="id" column="id" />
+			<result property="uname" column="uname" />
+			<result property="upwd" column="upwd" />
+			<result property="name" column="name" />
+			<result property="sex" column="sex" />
+			<result property="zhiwei" column="zhiwei" />
+		</association>
+	</resultMap>
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and a.id= #{id}
+                </if>
+			<if test="uid!=null and uid!=0">
+				and a.uid= #{uid}
+                        </if>
+			<if test="bid!=null and bid!=0">
+				and a.bid= #{bid}
+                        </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultMap="queryMap">
+		<if test="page">
+		select * from (
+		</if>
+		<if test="!page">
+		select * from  (  
+		</if>
+		
+		select
+		a.*,b.uname,b.upwd,b.name,b.sex,b.tel,b.email,b.birthday,b.photo,b.xueli,b.catelogid,b.xinzi,b.gzjy,b.school,b.zhuanye,b.sdate,b.zt,b.youdian
+		from comment a left join tuser b on a.uid=b.id 
+		<include refid="Where_Clause" />
+		) x
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(*) nums from comment a left join tuser b on a.uid=b.id
+		
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryCommentById" parameterType="int" resultType="Comment">
+		select * from comment where id=${value}
+	</select>
+	<insert id="insertComment" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Comment">
+		insert into comment
+		(uid,bid,content,cdate)
+		values
+		(#{uid},#{bid},#{content},#{cdate});
+	</insert>
+	<update id="updateComment" parameterType="Comment">
+		update
+		comment set
+		uid=#{uid},bid=#{bid},content=#{content},cdate=#{cdate}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteComment" parameterType="int">
+		delete from comment where id=${value}
+	</delete>
+</mapper>
+ 

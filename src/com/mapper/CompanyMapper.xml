@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.CompanyMapper">
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and id= #{id}
+            </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultType="Company">
+		<if test="page">
+		select* from company
+		</if>
+		<if test="!page">
+		select * from company
+		</if>
+		
+		<include refid="Where_Clause" />
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from company
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryCompanyById" parameterType="int" resultType="Company">
+		select * from company where id=${value}
+	</select>
+	<insert id="insertCompany" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Company">
+		insert into company
+		(name,shipin,miaoshu)
+		values
+		(#{name},#{shipin},#{miaoshu});
+	</insert>
+	<update id="updateCompany" parameterType="Company">
+		update
+		company set
+		name=#{name},shipin=#{shipin},miaoshu=#{miaoshu}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteCompany" parameterType="int">
+		delete from company where id=${value}
+	</delete>
+</mapper>
+ 

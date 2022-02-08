@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.GonggaoMapper">
+	<sql id="Where_Clause">
+		<where>
+			<if test="id!=null and id!=0">
+				and id= #{id}
+            </if>
+			<if test="name!=null and name!=''">
+				and name LIKE concat(concat('%',#{name}),'%')
+                        </if>
+			<if test="gtype!=null and gtype!=''">
+				and gtype=#{gtype}
+                        </if>
+		</where>
+	</sql>
+	<select id="query" parameterType="java.util.Map" resultType="Gonggao">
+		<if test="page">
+		select * from gonggao
+		</if>
+		<if test="!page">
+		select * from   gonggao  
+		</if>
+		<include refid="Where_Clause" />
+		<if test="page">
+			limit  ${offset}, ${pageSize}
+		</if>
+	</select>
+	<select id="getCount" parameterType="java.util.Map" resultType="Int">
+		select count(0) from gonggao
+		<include refid="Where_Clause" />
+	</select>
+	<select id="queryGonggaoById" parameterType="int" resultType="Gonggao">
+		select * from gonggao where id=${value}
+	</select>
+	<insert id="insertGonggao" useGeneratedKeys="true" keyProperty="id"
+		parameterType="Gonggao">
+		insert into gonggao
+		(name,tupian,jianjie,miaoshu,cdate,gtype)
+		values
+		(#{name},#{tupian},#{jianjie},#{miaoshu},#{cdate},#{gtype});
+	</insert>
+	<update id="updateGonggao" parameterType="Gonggao">
+		update
+		gonggao set
+		name=#{name},tupian=#{tupian},jianjie=#{jianjie},miaoshu=#{miaoshu},gtype=#{gtype}
+		where
+		id=#{id}	
+	</update>
+	<delete id="deleteGonggao" parameterType="int">
+		delete from gonggao where id=${value}
+	</delete>
+</mapper>
+ 
