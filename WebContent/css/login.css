@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+* { margin:0; padding:0; list-style:none;
+}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{*+height:1%;}
+html, body { 
+	font:normal 14px "Microsoft YaHei";
+	font-family: "Microsoft YaHei","微软雅黑","sans-serif" ;
+	height:100%;
+}
+body{width:100%; height:100%; background:url(../images/loadbg.jpg) #0982d3 no-repeat left top; background-size:cover;}
+.error{color:#F00; font-size:12px; margin-top:5px;}
+.login{width:100%; height:100%;}
+.login-top{width:100%; height:135px; text-align:center;}
+.loginDiv{ position:relative; width:100%; margin:0 auto;}
+.login-con{border-top: solid 3px #33aeee;padding:20px 45px; background:#f9f9f9; width:410px; height:auto; box-sizing:border-box; -webkit-box-sizing:border-box; margin:auto;}
+.login-con .login-tit{ font-size: 22px;color: #000;margin: 10px 0;border-bottom: solid 1px #ccc;}
+.inp{color:#666;}
+.inpp{box-shadow:0 0 5px #06F; -webkit-box-shadow:0 0 5px #06F}
+.login-form p{width:100%; height:34px; padding-left:34px; margin-top:15px; box-sizing:border-box; -webkit-box-sizing:border-box;}
+.login-form .p1{ background:url(../images/icon1.png) no-repeat left top;}
+.login-form .p2{ background:url(../images/icon2.png) no-repeat left top;}
+.login-form .p3{ padding-left:0;}
+.login-form .alterInput{padding-left:5px;width:100%; height:32px; line-height:32px; border-left:none; border-bottom:1px solid #ccc; border-top:1px solid #ccc; border-right:1px solid #ccc;}
+.login-form .alterOption{
+	padding-left:5px;
+	width:100px; 
+	height:32px; 
+	line-height:32px; 
+	border:1px solid #ccc; }
+
+
+.login-form .acreditImg{ float:left; width:84px; height:34px;}
+.login-form .acreditImg>img{width:84px; height:34px; border:none;}
+.login-form .btn{border:none; padding:10px; color:#fff; font-size:18px; border-radius:5px; -webkit-border-radius:5px; cursor:pointer; box-shadow:0 0 10px #999;}
+.login-form .btn1{
+/**	width:55%; */
+	width:100%; 
+	background:#3ab0e8; 
+	float:left;}
+.login-form .btn2{width:35%; background:#fc9e25; float:right;}
+.login-footer{ height:50px; line-height:50px; text-align:center; color:#fff;}
+.help{text-align:center;color:#fff;}
+.help a{color:#fff;text-decoration:none;}

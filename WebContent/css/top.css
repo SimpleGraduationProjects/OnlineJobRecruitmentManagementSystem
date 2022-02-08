@@ -1,0 +1,70 @@
+@charset "utf-8";
+/** 头部基础 **/
+#header {
+	width: 100%;
+	height: 90px;
+	padding: 0 20px;
+	position: fixed;
+	z-index: 11;
+	left: 0;
+	top: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+
+#menu {
+	position: relative;
+	list-style: none;
+	height: 90px;
+}
+
+#menu>li {
+	float: left;
+}
+/* 系统logo区域 */
+#logo {
+	float: left;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+#logo img {
+	vertical-align: middle;
+	width: 60px;
+	height: 60px;
+}
+
+#rinfo {
+	margin-right: 60px;
+	float: right;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	color: #ffffff;
+}
+
+#rinfo a {
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration-line: none;
+}
+
+#rinfo #exit {
+	margin-left: 20px;
+}
+/* 系统标题样式 */
+#system_title {
+	color: #fff;
+	height: 33px;
+	line-height: 33px;
+	font-size: 26px;
+	vertical-align: middle;
+	font-weight: bold;
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	margin-left: 10px;
+}
+
+/**头部颜色**/
+#header {
+	background: #31708f;
+}

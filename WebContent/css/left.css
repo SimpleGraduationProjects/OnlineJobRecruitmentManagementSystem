@@ -1,0 +1,227 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+	background: #EBEBEB;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	outline: none;
+	text-decoration: none;
+}
+
+/*自定义导航*/
+.myheading {
+	background-color: #1C2B36;
+}
+
+.navbar-inner {
+	background-color: #1C2B36;
+	margin-bottom: 0px;
+}
+
+.navbar-inner .navbar-brand {
+	color: #FFF;
+}
+
+.navbar-inner .navbar-brand:hover, .navbar-inner .navbar-brand:focus {
+	color: #FFF;
+	background-color: transparent;
+}
+
+.navbar-inner .navbar-text {
+	color: #FFF;
+}
+
+.navbar-inner .navbar-nav>li {
+	border-right: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.navbar-inner .navbar-nav>li>a {
+	color: #FFF;
+}
+
+.navbar-inner .navbar-nav>li>a:hover, .navbar-inner .navbar-nav>li>a:focus
+	{
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+.navbar-inner .navbar-toggle {
+	border-color: #FFF;
+}
+
+.navbar-inner .navbar-toggle:hover, .navbar-inner .navbar-toggle:focus {
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+.navbar-inner .navbar-toggle .icon-bar {
+	background-color: #FFF;
+}
+
+.navbar-inner .navbar-nav>.open>.dropdown-menu>li>a:hover, .navbar-inner .navbar-nav>.open>.dropdown-menu>li>a:focus
+	{
+	color: #FFF;
+	background-color: #5B90BF;
+}
+
+.navbar-inner .navbar-nav>.open>a, .navbar-inner .navbar-nav>.open>a:hover,
+	.navbar-inner .navbar-nav>.open>a:focus {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.06);
+}
+
+@media ( max-width : 767px) {
+	.navbar-inner .navbar-nav .open .dropdown-menu>li>a {
+		color: #FFF;
+	}
+	.navbar-inner .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-inner .navbar-nav .open .dropdown-menu>li>a:focus
+		{
+		color: #FFF;
+		background-color: rgba(255, 255, 255, 0.06);
+	}
+	ul.dropdown-menu::before {
+		border: none;
+	}
+	.dropdown-menu-arrow-right::before {
+		display: none;
+	}
+}
+
+ul.dropdown-menu::before {
+	border-bottom: 8px solid #fff;
+}
+
+.dropdown-menu-arrow-right::before {
+	content: "";
+	position: absolute;
+	right: 12px;
+	top: -16px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent #fff;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+}
+/*自定义导航*/
+.mybody {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.mybody .main-wapper {
+	position: relative;
+}
+
+/*自定义菜单*/
+.mybody .siderbar-wapper {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	width: 220px;
+	display: block;
+	background-color: #FFF;
+	overflow-x: hidden;
+	overflow-y: auto;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.mybody .siderbar-wapper>.menu {
+	margin-bottom: 0px;
+}
+
+.panel-group .panel {
+	border-radius: 0px;
+	margin: 0px;
+	border: 0px;
+	box-shadow: none;
+}
+
+.panel-group .panel+.panel {
+	margin-top: 0px;
+}
+
+.mybody .panel-inner {
+	border-bottom: 1px solid #F3F3F3;
+	position: relative;
+}
+
+.mybody .panel-inner a {
+	color: #626262;
+	font-weight: 700;
+}
+
+.mybody .panel-inner a:hover {
+	color: #5B90BF;
+}
+
+.mybody .panel-inner a:focus {
+	color: #5B90BF;
+}
+
+.mybody .panel-heading-self {
+	padding: 0px;
+	border: none;
+}
+
+.mybody .panel-heading-self::after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	top: 15px;
+	border-bottom: 5px solid #e3e3e3;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent #e3e3e3;
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+}
+
+.panel-heading-self>.panel-title>a {
+	padding: 0px 15px;
+	height: 39px;
+	line-height: 39px;
+	display: block;
+	background-color: #FFF;
+	font-size: 14px;
+}
+
+.mybody .list-group-self {
+	
+}
+
+.mybody a.list-group-item {
+	color: #626262;
+	font-weight: normal;
+	height: 39px;
+	line-height: 39px;
+	padding: 0px 15px 0px 25px;
+	background-color: #FaFaFa;
+	border: 1px solid #F1F1F1;
+}
+
+.mybody a.list-group-item:hover {
+	color: #5B90BF;
+	background-color: #FaFaFa;
+}
+
+.mybody a.list-group-item:focus {
+	color: #5B90BF;
+	background-color: #FaFaFa;
+}
+/*自定义菜单*/
+.mybody .main-content {
+	margin-left: 220px;
+	overflow: hidden;
+	background-color: #ebebeb;
+}
